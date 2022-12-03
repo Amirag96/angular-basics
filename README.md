@@ -51,18 +51,18 @@ strict: false
 ```
 
 # Course structure: 
-1- Getting started 
-2- The basics 
-3- Components & Databinding 
-4- Directives 
-5- Services & Dependency Injection 
-6- Routing 
-7- Observables 
-8- Forms 
-9- Pipes 
-10- Http 
-11- Authentication 
-12- Optimizations & NgModules 
-13- Deployment 
-14- Animations & Testing
+1. Getting started 
+2. The basics 
+3. Components & Databinding 
+4. Directives 
+5. Services & Dependency Injection 
+6. Routing 
+7. Observables 
+8. Forms 
+9. Pipes 
+10. Http 
+11. Authentication 
+12. Optimizations & NgModules 
+13. Deployment 
+14. Animations & Testing
 
