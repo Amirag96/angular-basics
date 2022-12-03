@@ -41,10 +41,10 @@ ng generate directive <name>
 ng g d <name>
 
 ```
-**Two-way Binding:** <br />
-Input changes in HTML input &rarr; name changes in .ts file --> using [(ngModule)] directive  <br />
+• **Two-way Binding:** <br />
+Input changes in HTML input &rarr; name changes in .ts file &rarr; using [(ngModule)] directive  <br />
 
-**disable strict mode** &rarr; to enable declarations of type any
+• **disable strict mode** &rarr; to enable declarations of type any
 ```
 // tsconfig.json
 strict: false
