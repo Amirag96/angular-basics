@@ -10,8 +10,8 @@ I enrolled in "Angular - The Complete Guide (2023 Edition)" by maximilian and de
 • It gives the user a very reactive experience <br />
 • Javascript changes the DOM element in the runtime <br />
 
-**Angular CLI** &rarr; a tool to create projects, generate application and library code, <br />
+• **Angular CLI** &rarr; a tool to create projects, generate application and library code, <br />
 and perform a variety of ongoing development tasks such as testing, bundling, and deployment.
 
-**Angular JS** &rarr; to optimize project  <br />
-**Node package manager (npm)** &rarr; to manage dependencies
+• **Angular JS** &rarr; to optimize project  <br />
+• **Node package manager (npm)** &rarr; to manage dependencies
