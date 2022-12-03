@@ -6,6 +6,6 @@ I enrolled in "Angular - The Complete Guide (2023 Edition)" by maximilian and de
 [I was motivated and inspired by Thi's blog](https://dinhanhthi.com/angular-1-basics-components-databinding-directives/) :sparkles:
 
 ## What is Angular?
-• Angular is a javascript framework which allows you to create reactive single page applications (SPA)
-• It gives the user a very reactive experience
-• Javascript changes the DOM element in the runtime
+• Angular is a javascript framework which allows you to create reactive single page applications (SPA) <br />
+• It gives the user a very reactive experience <br />
+• Javascript changes the DOM element in the runtime <br />
