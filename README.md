@@ -9,3 +9,6 @@ I enrolled in "Angular - The Complete Guide (2023 Edition)" by maximilian and de
 • Angular is a javascript framework which allows you to create reactive single page applications (SPA) <br />
 • It gives the user a very reactive experience <br />
 • Javascript changes the DOM element in the runtime <br />
+
+Angular CLI &rarr; a tool to create projects, generate application and library code, <br />
+and perform a variety of ongoing development tasks such as testing, bundling, and deployment.
