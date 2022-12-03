@@ -15,3 +15,25 @@ and perform a variety of ongoing development tasks such as testing, bundling, an
 
 • **Angular JS** &rarr; to optimize project  <br />
 • **Node package manager (npm)** &rarr; to manage dependencies
+
+### CLI Commands:
+
+```
+// new project
+ng new angular-basics
+
+// serve
+ng serve
+ng serve --port 5000
+
+// create component
+ng generate component <name>
+ng g c <name> 
+ng g c <name> --skipTests true # without test files
+ng g c <name> --selector <app-name> # with selector
+
+// create directive
+ng generate directive <name>
+ng g d <name>
+
+```
