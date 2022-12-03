@@ -16,6 +16,10 @@ and perform a variety of ongoing development tasks such as testing, bundling, an
 • **Angular JS** &rarr; to optimize project  <br />
 • **Node package manager (npm)** &rarr; to manage dependencies
 
+• **What's typescript?**
+Superset for JS &rarr; define type and variable is checked while coding
+TS doesn't run in the browser &rarr; compiled to JS (using CLI)
+
 ### CLI Commands:
 
 ```
@@ -37,3 +41,28 @@ ng generate directive <name>
 ng g d <name>
 
 ```
+**Two-way Binding:** <br />
+Input changes in HTML input &rarr; name changes in .ts file --> using [(ngModule)] directive  <br />
+
+**disable strict mode** &rarr; to enable declarations of type any
+```
+// tsconfig.json
+strict: false
+```
+
+# Course structure: 
+1- Getting started 
+2- The basics 
+3- Components & Databinding 
+4- Directives 
+5- Services & Dependency Injection 
+6- Routing 
+7- Observables 
+8- Forms 
+9- Pipes 
+10- Http 
+11- Authentication 
+12- Optimizations & NgModules 
+13- Deployment 
+14- Animations & Testing
+
