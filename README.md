@@ -85,8 +85,8 @@ ng serve --port 4300
 
 ```
 ### Project Structure:
-• **Single page app:
-index.html --> is served by the cli which contains all components
+## **Single page app**
+• **index.html** --> is served by the cli which contains all components
 
-• **main.ts --> app.module.ts [include all avaiable components]
+• **main.ts** --> app.module.ts [include all avaiable components]
 
