@@ -84,8 +84,8 @@ ng serve --port 4300
 // Open page > Inspect > Sources > styles.css -> there is bootstrap there!
 
 ```
-### Project Structure:
-## **Single page app**
+## Project Structure:
+### **Single page app**
 • **index.html** --> is served by the cli which contains all components
 
 • **main.ts** --> app.module.ts [include all avaiable components]
