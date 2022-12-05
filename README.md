@@ -66,3 +66,27 @@ strict: false
 13. Deployment 
 14. Animations & Testing
 
+### Bootstrap Setup:
+
+```
+npm i --save bootstrap
+
+// angular.json
+// -> changes "styles"
+"styles": [
+	"node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+],
+
+// rerun
+ng serve --port 4300
+// Check?
+// Open page > Inspect > Sources > styles.css -> there is bootstrap there!
+
+```
+### Project Structure:
+• **Single page app:
+index.html --> is served by the cli which contains all components
+
+• **main.ts --> app.module.ts [include all avaiable components]
+
