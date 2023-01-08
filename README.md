@@ -69,6 +69,8 @@ strict: false
 
 ![Course Structure](https://github.com/Amirag96/angular-basics/blob/main/CourseMap.png)
 
+
+# 1.Getting started:
 ### Bootstrap Setup:
 
 ```
@@ -111,3 +113,51 @@ npm ERR! npm ERR! While resolving: my-first-app@0.0.0 npm ERR! Found: jasmine-co
 npm install
 npm update
 ```
+
+# 2. The Basics:
+
+• **How Angular is loaded and started?**
+All things are in /index.html ← Single Page Application!!!
+After ng serve, there'll be a script at the end of the page that will be injected by CLI automatically
+First code is executed → main.ts → bootstrapModule(AppModule) ← from app.module.ts ← there is bootstrap: [] (this one is only in app root)
+
+• **Components:**
+Key feature in angular!
+
+After creating a new component ⇒ Don't forget to add it in module!! (if you're using ng generate component <module-name> It'll be automatically added!)
+```
+ng generate component <name>
+ng g c <name> 			    # shorthand
+ng g c <name> --skipTests true      # without test files
+ng g c <name> --selector <app-name> # with selector
+```
+Split up your complex app into reusable components.
+
+• **Good practice:** having folder name = component name
+
+(Convention) Name of component ServerComponent ← normal typescript class with decorator @Component()
+
+Make sure unique selector <app-server>
+Can use inline in selector, template, styles of @Component() → using backtick ``` for multiple lines.
+
+template: `
+	<app-server></app-server>
+	<p>abc</p>
+`
+```
+// as a selector
+selector: "app-servers"
+// then
+<app-servers></app-servers>
+
+// as a class
+selector: ".app-servers"
+// then
+<div class="app-servers"></div>
+
+// as an attribute
+selector: "[app-server]"
+// then
+<div app-servers></div>
+```
+• **constructor in class ** → called whenever component created ← a function of TypeScript!
