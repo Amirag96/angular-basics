@@ -67,6 +67,8 @@ strict: false
 13. Deployment 
 14. Animations & Testing
 
+![Course Structure](https://github.com/Amirag96/angular-basics/blob/main/CourseMap.png)
+
 ### Bootstrap Setup:
 
 ```
