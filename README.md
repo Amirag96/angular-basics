@@ -96,7 +96,7 @@ ng serve --port 4300
 
 ## **Problems faced in course assignments:**
 
-• I got the below errors when i tried to serve the project:
+• I got the below errors while trying to serve the project:
 ```
 npm ERR! npm ERR! While resolving: my-first-app@0.0.0 npm ERR! Found: jasmine-core@3.6.0 npm ERR! node_modules/jasmine-core npm ERR! dev jasmine-core@"~3.6.0" from the root project npm ERR! npm ERR! Could not resolve dependency: npm ERR! peer jasmine-core@">=3.8" from karma-jasmine-html-reporter@1.7.0 npm ERR! node_modules/karma-jasmine-html-reporter npm ERR! dev karma-jasmine-html-reporter@"^1.5.0" from the root project
 ```
@@ -106,7 +106,7 @@ npm ERR! npm ERR! While resolving: my-first-app@0.0.0 npm ERR! Found: jasmine-co
 "jasmine-core": "~3.8.0",
 "karma-jasmine-html-reporter": "^1.7.0"
 ```
-used the below commands to update and install the new versions
+• & used the below commands to update and install the new versions
 ```
 npm install
 npm update
