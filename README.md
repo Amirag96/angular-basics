@@ -117,14 +117,16 @@ npm update
 # 2. The Basics:
 
 • **How Angular is loaded and started?**
-All things are in /index.html ← Single Page Application!!!
-After ng serve, there'll be a script at the end of the page that will be injected by CLI automatically
-First code is executed → main.ts → bootstrapModule(AppModule) ← from app.module.ts ← there is bootstrap: [] (this one is only in app root)
+All things are in /index.html ← Single Page Application!!! <br />
+After ng serve, there'll be a script at the end of the page that will be injected by CLI automatically <br />
+First code is executed → main.ts → bootstrapModule(AppModule) ← from app.module.ts ← there is bootstrap: [] (this one is only in app root) <br />
 
 • **Components:**
-Key feature in angular!
+Key feature in angular! <br />
 
-After creating a new component ⇒ Don't forget to add it in module!! (if you're using ng generate component <module-name> It'll be automatically added!)
+After creating a new component ⇒ Don't forget to add it in module!! <br />
+(if you're using ng generate component <module-name> It'll be automatically added!) <br />
+
 ```
 ng generate component <name>
 ng g c <name> 			    # shorthand
