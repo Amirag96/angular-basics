@@ -166,19 +166,15 @@ selector: "[app-server]"
 
 # Databinding:
 Databinding = communication
-![Databinding](https://github.com/Amirag96/angular-basics/blob/main/Databinding.png)
+![Databinding](https://github.com/Amirag96/angular-basics/blob/main/databinding.png)
 
-• **1- String Interpolation:** 
-	
-``` {{data}} ```
+• **1- String Interpolation:**  ``` {{data}} ```
 ```
 <p>Server with ID {{serverId}}</p>
 
 ```
 	
-• **2- Property Binding:** 
-	
-``` [property] = "data" ```
+• **2- Property Binding:** ``` [property] = "data" ```
 	
 ```
 // disabled & innerText are DOM properties
@@ -187,8 +183,7 @@ Databinding = communication
 
 ```
 
-• **3- Event Binding:** 
-``` (Event) = "expression" ```
+• **3- Event Binding:**  ``` (Event) = "expression" ```
 ```
 // we use click event instead of the usual JS onclick event 
 
@@ -204,8 +199,9 @@ onUpdateServerName(event: Event){ // "Event" can be "any" but in this case we kn
 }
 ```
 					  
-• **4-Two-way binding:** → enable ngModel directive and import FormsModule in AppModule <br />
+• **4-Two-way binding:** ``` [(ngModel)] = "data" ```
+→ enable ngModel directive and import FormsModule in AppModule <br />
 import { FormsModule } from '@angular/forms' <br />
-``` [(ngModel)] = "data" ```
+
 
 					    
