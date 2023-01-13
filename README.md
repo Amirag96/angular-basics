@@ -124,6 +124,8 @@ First code is executed → main.ts → bootstrapModule(AppModule) ← from app.m
 • **Components:**
 Key feature in angular! <br />
 
+Split up your complex app into reusable components.<br />
+
 After creating a new component ⇒ Don't forget to add it in module!! <br />
 (if you're using ng generate component <module-name> It'll be automatically added!) <br />
 
@@ -133,8 +135,6 @@ ng g c <name> 			    # shorthand
 ng g c <name> --skipTests true      # without test files
 ng g c <name> --selector <app-name> # with selector
 ```
-Split up your complex app into reusable components.
-
 • **Good practice:** having folder name = component name
 
 (Convention) Name of component ServerComponent ← normal typescript class with decorator @Component()
@@ -163,3 +163,49 @@ selector: "[app-server]"
 <div app-servers></div>
 ```
 • **constructor in class ** → called whenever component created ← a function of TypeScript!
+
+# Databinding:
+Databinding = communication
+![Databinding](https://github.com/Amirag96/angular-basics/blob/main/Databinding.png)
+
+• **1- String Interpolation:** 
+	
+``` {{data}} ```
+```
+<p>Server with ID {{serverId}}</p>
+
+```
+	
+• **2- Property Binding:** 
+	
+``` [property] = "data" ```
+	
+```
+// disabled & innerText are DOM properties
+<button class="btn" [disabled]="allowNewServer">Add Server</button>
+<p [innerText]="allowNewServer"></p>
+
+```
+
+• **3- Event Binding:** 
+``` (Event) = "expression" ```
+```
+// we use click event instead of the usual JS onclick event 
+
+<button (click)="onCreateServer()">Add Server</button>
+<input type="text" class="form-control" // bootstrap's class
+       (input)="onUpdateServerName($event)"> 
+//^ event created by (input)
+
+// .component.ts
+onUpdateServerName(event: Event){ // "Event" can be "any" but in this case we know it is "Event"
+	this.serverName = (<HTMLInputElement>event.target).value // can use Inspect to check these child element
+									// ^Just tell typescript that our event will be HTMLInputElement
+}
+```
+					  
+• **4-Two-way binding:** → enable ngModel directive and import FormsModule in AppModule <br />
+import { FormsModule } from '@angular/forms' <br />
+``` [(ngModel)] = "data" ```
+
+					    
