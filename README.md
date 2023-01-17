@@ -164,7 +164,8 @@ selector: "[app-server]"
 ```
 • **constructor in class ** → called whenever component created ← a function of TypeScript!
 
-# Databinding:
+	
+# **Databinding:**
 Databinding = communication
 ![Databinding](https://github.com/Amirag96/angular-basics/blob/main/databinding.png)
 
@@ -204,4 +205,23 @@ onUpdateServerName(event: Event){ // "Event" can be "any" but in this case we kn
 import { FormsModule } from '@angular/forms' <br />
 
 
-					    
+# **Directives:**
+They're instructions in the DOM ( 3 Types of directives)
+       
+• **1- Structural directives:**
+    
+       * is for the structural directive
+    ```
+       <p *ngIf="serverCreated; else noServer">
+		Server created with name {{serverName}}
+	</p>
+	
+	<ng-template #noServer>
+		<p>No server Created<p>
+	</ng-template>
+	
+     ```
+    	
+• **2- Attribute directives:**
+They don't add or remove elements but only change the element they were placed on
+   ``` [ngStyle]={'backgroundColor: getColor()'}  ```
