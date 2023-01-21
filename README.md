@@ -75,6 +75,7 @@ strict: false
 
 ```
 npm i --save bootstrap
+nmp install jquery --save
 
 // angular.json
 // -> changes "styles"
@@ -82,6 +83,10 @@ npm i --save bootstrap
 	"node_modules/bootstrap/dist/css/bootstrap.min.css",
   "src/styles.css"
 ],
+  "scripts": [
+          "node_modules/jquery/dist/jquery.min.js",
+          "node_modules/tether/dist/js/tether.js",
+          "node_modules/bootstrap/dist/js/bootstrap.min.js"
 
 // rerun
 ng serve --port 4300
