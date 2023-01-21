@@ -75,7 +75,7 @@ strict: false
 
 ```
 npm i --save bootstrap
-nmp install jquery --save
+npm install jquery --save
 
 // angular.json
 // -> changes "styles"
