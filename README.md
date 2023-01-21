@@ -85,7 +85,6 @@ npm install jquery --save
 ],
   "scripts": [
           "node_modules/jquery/dist/jquery.min.js",
-          "node_modules/tether/dist/js/tether.js",
           "node_modules/bootstrap/dist/js/bootstrap.min.js"
 
 // rerun
