@@ -34,7 +34,11 @@ ng serve --port 5000
 // create component
 ng generate component <name>
 ng g c <name> 
+
+ng g c <name> --skip-tests 
+or
 ng g c <name> --skipTests true # without test files
+
 ng g c <name> --selector <app-name> # with selector
 
 // create directive
