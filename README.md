@@ -14,7 +14,7 @@ DOM Element &rarr; [the Element object represents an HTML element, like P, DIV, 
 • **Angular CLI** &rarr; a tool to create projects, generate application and library code, <br />
 and perform a variety of ongoing development tasks such as testing, bundling, and deployment.
 
-• **Angular JS** &rarr; to optimize project  <br />
+• **Node JS** &rarr; to optimize project  <br />
 • **Node package manager (npm)** &rarr; to manage dependencies
 
 • **What's typescript?**
