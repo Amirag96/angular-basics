@@ -20,13 +20,7 @@ and perform a variety of ongoing development tasks such as testing, bundling, an
 • **What's typescript?**
 Superset for JS &rarr; define type and variable is checked while coding
 TS doesn't run in the browser &rarr; compiled to JS (using CLI)
-### Commands:
-```
-// To disable a service running on port 4200 on Windows, open cmd:
-netstat -ano | findstr :4200
-taskkill /F /PID <PID>
 
-```
 ### CLI Commands:
 
 ```
@@ -111,6 +105,13 @@ ng serve --port 4300
 
 
 ## **Problems faced in course assignments:**
+
+•  Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/
+```
+// To disable a service running on port 4200 on Windows, open cmd:
+netstat -ano | findstr :4200
+taskkill /F /PID <PID>
+```
 
 • I got the below errors while trying to serve the project:
 ```
