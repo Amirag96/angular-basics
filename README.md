@@ -20,7 +20,13 @@ and perform a variety of ongoing development tasks such as testing, bundling, an
 • **What's typescript?**
 Superset for JS &rarr; define type and variable is checked while coding
 TS doesn't run in the browser &rarr; compiled to JS (using CLI)
+### Commands:
+```
+// To disable a service running on port 4200 on Windows, open cmd:
+netstat -ano | findstr :4200
+taskkill /F /PID <PID>
 
+```
 ### CLI Commands:
 
 ```
