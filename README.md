@@ -221,13 +221,19 @@ import { FormsModule } from '@angular/forms' <br />
 
 
 # **Directives:**
-They're instructions in the DOM ( 3 Types of directives)
+Directives → Instructions in the DOM that allows you to extend the behavior of HTML elements, attributes, and components (3 Types of directives)
        
 ![Directives](https://github.com/Amirag96/angular-basics/blob/main/directives.jpg)
 
-• **1- Structural directives:**
-    
-       * is for the structural directive
+• **1- Component directives:**
+The building blocks of Angular applications. They are directives with a template. Components combine logic, data, and presentation into a single reusable unit. You use the ``` @Component ``` decorator to define a component.
+
+• **2- Structural directives:**
+Change the structure of the DOM by adding, removing, or manipulating elements.  <br />
+* is used for the structural directive  <br />
+'#' is a local reference  <br />
+Examples: ``` *ngFor, *ngIf, and *ngSwitch ``` <br />
+     
     ```
        <p *ngIf="serverCreated; else noServer">
 		Server created with name {{serverName}}
@@ -239,6 +245,22 @@ They're instructions in the DOM ( 3 Types of directives)
 	
      ```
     	
-• **2- Attribute directives:**
-They don't add or remove elements but only change the element they were placed on
+• **3- Attribute directives:**
+Change the appearance or behavior of an element, component, or another directive   <br />
+Examples: ``` ngStyle, ngClass ``` <br />
+
    ``` [ngStyle]={'backgroundColor: getColor()'}  ```
+
+```
+<!-- Component Directive -->
+<app-header></app-header>
+<!-- Structural Directive -->
+
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<!-- Attribute Directive -->
+<div [ngClass]="{ 'highlight': isHighlighted }">Highlight me!</div>
+
+  ```
