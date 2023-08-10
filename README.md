@@ -223,7 +223,7 @@ import { FormsModule } from '@angular/forms' <br />
 # **Directives:**
 They're instructions in the DOM ( 3 Types of directives)
        
-![Directives](https://github.com/Amirag96/directives.jpg)
+![Directives](https://github.com/Amirag96/angular-basics/blob/main/directives.jpg)
 
 • **1- Structural directives:**
     
