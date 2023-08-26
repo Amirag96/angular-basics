@@ -128,6 +128,35 @@ npm ERR! npm ERR! While resolving: my-first-app@0.0.0 npm ERR! Found: jasmine-co
 npm install
 npm update
 ```
+• TypeError: createPopper is not a function in Bootstrap JS:  <br />
+This error occurs when we use a Bootstrap component that requires the popper.js script but don't load the script on the page or load it after the bootstrap script. 
+```
+Uncaught TypeError: i.createPopper is not a function
+    at fe._createPopper (node_modules\bootstrap\dist\js\bootstrap.min.js:6:24313)
+    at fe.show (node_modules\bootstrap\dist\js\bootstrap.min.js:6:22680)
+    at fe.toggle (node_modules\bootstrap\dist\js\bootstrap.min.js:6:22492)
+    at HTMLAnchorElement.<anonymous> (node_modules\bootstrap\dist\js\bootstrap.min.js:6:26964)
+    at HTMLDocument.s (node_modules\bootstrap\dist\js\bootstrap.min.js:6:4531)
+    at _ZoneDelegate.invokeTask (zone.js:406:31)
+    at Zone.runTask (zone.js:178:47)
+    at ZoneTask.invokeTask [as invoke] (zone.js:487:34)
+    at invokeTask (zone.js:1661:18)
+    at globalCallback (zone.js:1704:33)
+```
+
+• To solve this error include the Bootstrap bundle script in angular.json  <br />
+→ Include **bootstrap.bundle.min.js** instead of **bootstrap.min.js** <br />
+→ The Bootstrap bundle script includes: <br />
+1. The popper.js script that we need in order to add functionality to dropdowns, modals, tooltips, popovers, etc. <br />
+2. The bootstrap.min.js JavaScript plugins. <br />
+
+```
+  "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
+
+            ]
+```
 
 # 2. The Basics:
 
