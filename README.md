@@ -146,10 +146,6 @@ Uncaught TypeError: i.createPopper is not a function
 
 • To solve this error include the Bootstrap bundle script in angular.json  <br />
 → Include **bootstrap.bundle.min.js** instead of **bootstrap.min.js** <br />
-→ The Bootstrap bundle script includes: <br />
-1. The popper.js script that we need in order to add functionality to dropdowns, modals, tooltips, popovers, etc. <br />
-2. The bootstrap.min.js JavaScript plugins. <br />
-
 ```
   "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
@@ -157,6 +153,9 @@ Uncaught TypeError: i.createPopper is not a function
 
             ]
 ```
+→ The Bootstrap bundle script includes: <br />
+1. The popper.js script that we need in order to add functionality to dropdowns, modals, tooltips, popovers, etc. <br />
+2. The bootstrap.min.js JavaScript plugins. <br />
 
 # 2. The Basics:
 
