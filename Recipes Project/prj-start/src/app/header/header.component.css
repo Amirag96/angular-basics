@@ -1,0 +1,39 @@
+/* styles.css */
+.playfair-text {
+  font-family: 'Playfair Display', serif;
+  }
+.inter-text{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.logo {
+    width: 150px; /* Adjust the desired width */
+    max-height: 50px; /* Adjust the maximum desired height */
+  }
+
+.navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Spread items across the container */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Optional padding for spacing */
+  }
+  
+  /* Style for the list items */
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px; /* Gap between list items */
+  }
+  /* Style for the navbar-brand */
+.navbar-brand {
+    margin-left: 60px; /* Adjust margin as needed for offset */
+    margin-right: 100px; /* Adjust margin as needed for offset */
+  }
