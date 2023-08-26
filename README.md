@@ -292,3 +292,50 @@ Examples: ``` ngStyle, ngClass ``` <br />
 <div [ngClass]="{ 'highlight': isHighlighted }">Highlight me!</div>
 
   ```
+
+# **Model:**
+• There's no @Model decorator in Angular
+• Can be used multiple times → write a class (ex: recipe.model.ts ) → can be extended later!
+  ```
+// recipe.model.ts
+export class Recipe { // <- TYPE!!!
+	public name: string;
+	public description: string;
+	public imagePath:
+
+	constructor(name: string, desc: string, imagePath: string) {
+		this.name = name;
+		this.description = des;
+		this.imagePath = imagePath;
+	}
+}
+
+// How to use it?
+// .component.ts
+export class RecipeListComponent implements OnInit {
+	recipes: Recipe[] = [ // using our model "Recipe" but array of Recipe(s)
+				// ^ just a type
+		new Recipe('Test', 'A test recipe', 'http//img/url'),
+		// there can be more...
+	];
+}
+
+// then use in .html
+{{ .name }}, {{ .description }} ... // with *ngFor
+
+// below are the same
+<img
+	src="{{ recipe.imagePath }}  // string interpolationing
+	[src]="recipe.imagePath"     // property binding ( preferred )
+>
+  ```
+# **shared folder:** 
+• 'src/app/shared' to store common shared resources such as models,services, directives, or utilities, that can be used across different features is a good practice for maintaining a clean and organized codebase <br />
+
+# **Debugging:**
+ **• Source Maps:** they map the source code(Typescript) to the runtime code (as the compiler turns that source code into JavaScript) to enable source code debugging at runtime. <br />
+• In ```tsconfig.json``` and by default it is ```"sourceMap": true``` <br />
+• Open debugger tool in browser (Chrome) > ```main.bundle.js``` > click some checkpoint > jump/open a new file containing the line of code (eg. app.component.ts) ⇒ however, if bundle gets bigger → hard to find <br />
+**• webpack:** Go to webpack// > ./ > src > app > all your files with the same structure on your project <br />
+ERROR TypeError: Cannot read properties of undefined (reading 'push') <br />
+at AppComponent.onAddServer (app.component.ts:12:18)  →  line:column <br />
