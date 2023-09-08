@@ -1,4 +1,19 @@
-import { Component, Input, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, 
+  Input,
+  OnInit,
+  ViewEncapsulation,
+  OnChanges,
+  SimpleChanges,
+  DoCheck,
+  AfterContentChecked,
+  AfterContentInit,
+  AfterViewChecked,
+  AfterViewInit,
+  OnDestroy,
+  ViewChild,
+  ElementRef,
+  ContentChild
+ } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
@@ -9,15 +24,62 @@ import { Component, Input, OnInit,ViewEncapsulation } from '@angular/core';
   // ShadowDOM: Uses native Shadow DOM to provide true encapsulation for component styles and markup.
 
 })
-export class ServerElementComponent implements OnInit {
+export class ServerElementComponent implements OnInit,
+OnChanges,
+DoCheck,
+AfterContentChecked,
+AfterContentInit,
+AfterViewChecked,
+AfterViewInit,
+OnDestroy
+ {
 // All properties of a component are only accessible within the component.
 // Custom property binding
 // using srvElement as an alias for element to be used outside 
 @Input('srvElement') element:{type:string, name:string, content:string};
+@Input() name: string;
+@ViewChild('heading') header: ElementRef;
+@ContentChild('ContentParagraph') contentPar: ElementRef;
 
-  constructor() { }
+    constructor() { 
+      console.log('constructor called!');
+    }
+  
+    ngOnChanges(changes: SimpleChanges){
+      console.log('ngOnChanges called!');
+      
+      console.log('changes' + changes);
+    }
+    ngOnInit(): void {
+      console.log('ngOnInit called!');
+      /* You cannot access an element in the DOM in the ngOnInit() because the element has not been rendered yet */
+      // console.log('text Content: ' + this.header.nativeElement.textContent); 
+      // console.log('contentPar ' + this.contentPar.nativeElement.textContent);    
+    
+    }
 
-  ngOnInit(): void {
-  }
+    ngDoCheck() {
+      console.log('DoCheck called!');
+    }  
+      
+    ngAfterContentInit(){
+      console.log('ngAfterContentInit called!');
+      console.log('contentPar ' + this.contentPar.nativeElement.textContent);    
+    
+    }
+    ngAfterContentChecked() {
+      console.log('ngAfterContentChecked called!');
+    }
 
+    ngAfterViewInit(){
+      console.log('ngAfterViewInit called!');
+      console.log('text Content: ' + this.header.nativeElement.textContent); 
+    }
+    ngAfterViewChecked() {
+      console.log('ngAfterViewChecked called!');
+    }
+
+    ngOnDestroy() {
+      console.log('onDestroy called!');
+    }
 }
