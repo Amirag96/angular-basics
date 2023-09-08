@@ -3,15 +3,30 @@
     <div class="col-xs-12">
       <app-game-control (startGame)="ActionStartGame($event)"   #childComponent></app-game-control>
       <p class="lead">The counter value is: {{ childComponent?.counter }}</p>
+      <hr>
+      
       <ng-container *ngIf="childComponent.displayResult">
-      <div *ngIf="childComponent?.counter%2===0; else oddNumberBlock">
-        <app-even></app-even>
-      </div>
-      <ng-template #oddNumberBlock>
-        <app-odd></app-odd>
-      </ng-template>
+        <p>{{childComponent.$event}}</p>
+        <div *ngIf="childComponent?.counter%2===0; else oddNumberBlock">
+          <app-even [evenNumber]="childComponent.counter">
+            <p>Final Result: </p>
+          </app-even>
+        </div>
+        <ng-template #oddNumberBlock>
+          <app-odd [oddNumber]="childComponent.counter">
+            <p>Final Result: </p>
+          </app-odd>
+        </ng-template>
       </ng-container>
       
+      <hr>
+      <div class="row">
+        <div class="col-xs-12">
+          <app-odd *ngFor="let oddNumber of oddNumbers"  [oddNumber]="oddNumber"> </app-odd>
+          <app-even *ngFor="let evenNumber of evenNumbers" [evenNumber]="evenNumber"></app-even>
+       
+        </div>
+      </div>
       <hr>
       <h3>Bind it!</h3>
       <ol>
